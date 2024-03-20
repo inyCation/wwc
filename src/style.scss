@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    background: linear-gradient(to right, #2828ae 40%, #3c3cc9 70%, #2828ae 100%);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100vw;
+    height: 2rem;
+
+
+    >.left {
+
+        display: flex;
+        justify-content: space-around;
+        margin-right: 3rem;
+        width: 40%;
+
+        font-weight: 800;
+        font-size: 12px;
+
+        .save {
+
+            font-family: "Mulish", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: #3C3CC9;
+            background: #fff;
+            border-radius: .5rem;
+            display: grid;
+            place-items: center;
+            width: 8rem;
+            height: 1rem;
+        }
+
+        >.brew {
+
+            font-family: "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    }
+
+    >.right {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+
+
+        font-family: "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+        font-size: 14px;
+        font-weight: 600;
+
+
+        >.openSource {}
+    }
+
+}
+
+
+.nav {
+    position: fixed;
+    top: 0;
+}
+
+.navMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 5rem;
+    background-color: #fefefe;
+
+
+
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1) !important;
+
+
+    >.logo {
+        img {
+            width: 12rem;
+
+        }
+    }
+
+    >ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        width: 60%;
+
+        li {
+            display: flex;
+
+            font-size: 1.9rem;
+
+            flex-direction: row;
+            list-style: none;
+            font-size: .7rem;
+            padding: 0rem 1rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .free {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+
+        >.freeTrial {
+            width: 7rem;
+            padding: .2rem 0rem;
+            height: 2.6rem;
+
+            border-radius: .4rem;
+            background-color: #3434AD;
+            color: #ededed;
+            display: grid;
+            place-items: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        >.tte {
+            width: 8rem;
+            padding: .2rem 0rem;
+            height: 2.6rem;
+
+            border-radius: .4rem;
+            background-color: #fefefe;
+            color: #3434AD;
+            display: grid;
+            place-items: center;
+
+            outline: auto;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+main {
+    background-image: url("../src/assets/hero-home.webp");
+    background-position: center;
+
+    width: 100vw;
+    height: 100vh;
+
+
+    margin-top: 7rem;
+
+    background-repeat: no-repeat;
+    background-size: 180vw;
+    background-clip: border-box;
+    font-family: "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    margin-left: 4rem;
+
+    >.title {
+        margin-top: 2rem;
+        font-size: 72px;
+        font-weight: 800;
+        color: #171717;
+        width: 80%;
+    }
+
+    >.desc {
+        margin-top: 2rem;
+        font-size: 24px;
+        color: #404040;
+        font-weight: 300;
+        width: 40%;
+    }
+
+    >.why {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 45%;
+        margin-top: 5rem;
+        margin-left: -1rem;
+        color: #3434AD;
+    }
+
+    .free {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 40%;
+
+        margin-top: 2rem;
+
+        >.freeTrial {
+            width: 15rem;
+            padding: .2rem 0rem;
+            height: 2.6rem;
+
+            border-radius: .4rem;
+            background-color: #3434AD;
+            color: #ededed;
+            display: grid;
+            place-items: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        >.tte {
+            width: 15rem;
+            padding: .2rem 0rem;
+            height: 2.6rem;
+
+            border-radius: .4rem;
+            background-color: #fefefe;
+            color: #3434AD;
+            display: grid;
+            place-items: center;
+            // border: .5px solid #000;
+            outline: auto;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
+
+
+
+.openHr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin: 1rem 0rem;
+
+
+    .line {
+        width: 20%;
+        height: 2px;
+
+        background-color: #171717;
+    }
+}
+
+.companies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    margin: 2rem 3rem;
+
+    img {
+        width: 10rem;
+        aspect-ratio: 18/4;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .card {
+        background-color: #fefefe;
+
+        width: 45vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1) !important;
+
+        >.left {
+            height: 8rem;
+
+            img {
+                width: 13rem;
+                height: 8rem;
+
+
+            }
+
+
+        }
+
+        >.right {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+
+            flex-direction: column;
+
+            font-family: "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+            >.title {
+                font-size: 16px;
+                font-weight: 700;
+                color: #171717;
+            }
+
+            >.desc {
+                font-size: 16px;
+                font-weight: 300;
+                color: #404040;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.learnMore {
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 4rem 0rem;
+
+    .card {
+        width: 30%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-family: "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+        >.logo {
+
+            width: 3rem;
+            height: 3rem;
+            color: #3434AD;
+            display: grid;
+            place-items: center;
+            border: 2px solid #fff;
+            box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .2), 0 0 1px 1px rgba(0, 0, 0, .05);
+            border-radius: .3rem;
+        }
+        >.title{
+            font-size: 20px;
+            font-weight: 700;
+            color: #171717;
+        }
+
+        >.desc {
+            width: 80%;
+            text-align: center;
+            color: #404040;
+        }
+        >.learn{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+    }
+}
+
+.machine{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-direction: column;
+    font-family: "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    >.top{
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >.title{
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        >.desc{
+            width: 70%;
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+
+    >.complex{
+        width: 100vw;
+        height: 40vh;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        flex-direction: row;
+        margin-top: 2rem;
+        .comp,.simp{
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1) !important;
+
+            width: 33vw;
+            height: 14rem;
+            padding: 1rem 0.5rem;
+
+            li{
+                list-style: none;
+            }
+
+            >.title{
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+
+        .comp{
+            display: flex;
+            justify-content: end;
+
+            gap: 1rem;
+            align-items: end;
+            text-align: end;
+            flex-direction: column;
+
+            border-bottom-left-radius: 7rem;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem; 
+
+                
+                li{
+                    display: flex;
+                    justify-content: end;
+                    gap: .8rem;
+                    &::after{
+                        display: inline-block;
+                        content: "";
+                        width: 1rem;
+                        height: 1rem;
+                        background-color: rgb(247, 30, 19);
+                        border-radius: 1rem;
+
+                        border: 3px solid #fefefe;
+
+                        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1) !important;
+
+                    }
+                }
+            }
+        }
+
+        >.simp{
+            display: flex;
+            justify-content: center;
+
+            gap: 1rem;
+            align-items: start;
+            text-align: start;
+            flex-direction: column;
+
+            border-bottom-right-radius: 7rem;
+
+            margin-top: .5rem;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem; 
+
+                
+                
+                li{
+                    display: flex;
+                    justify-content: start;
+                    gap: .8rem;
+                    &::before{
+                        display: inline-block;
+                        content: "";
+                        width: 1rem;
+                        height: 1rem;
+                        background-color: rgb(34, 213, 10);
+                        border-radius: 1rem;
+
+                        border: 3px solid #fefefe;
+
+                        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1) !important;
+
+                    }
+                }
+            }
+        }
+    }
+}
